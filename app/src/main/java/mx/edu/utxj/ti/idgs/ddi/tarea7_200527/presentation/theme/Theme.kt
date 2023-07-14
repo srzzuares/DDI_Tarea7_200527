@@ -1,10 +1,10 @@
-package mx.edu.utxj.ddi.practica6_200527.presentation.theme
+package mx.edu.utxj.ti.idgs.ddi.tarea7_200527.presentation.theme
 
 import androidx.compose.runtime.Composable
 import androidx.wear.compose.material.MaterialTheme
 
 @Composable
-fun Practica6_200527Theme(
+fun Tarea7_200527Theme(
     content: @Composable () -> Unit
 ) {
     MaterialTheme(

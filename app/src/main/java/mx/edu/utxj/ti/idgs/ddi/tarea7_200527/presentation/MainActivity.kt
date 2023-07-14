@@ -4,7 +4,7 @@
  * changes to the libraries and their usages.
  */
 
-package mx.edu.utxj.ddi.practica6_200527.presentation
+package mx.edu.utxj.ti.idgs.ddi.tarea7_200527.presentation
 
 import android.os.Bundle
 import android.os.Handler
@@ -24,8 +24,8 @@ import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
-import mx.edu.utxj.ddi.practica6_200527.R
-import mx.edu.utxj.ddi.practica6_200527.presentation.theme.Practica6_200527Theme
+import mx.edu.utxj.ti.idgs.ddi.tarea7_200527.R
+import mx.edu.utxj.ti.idgs.ddi.tarea7_200527.presentation.theme.Tarea7_200527Theme
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -64,38 +64,4 @@ class MainActivity : ComponentActivity() {
     }
 
 
-}
-
-@Composable
-fun WearApp(greetingName: String) {
-    Practica6_200527Theme {
-        /* If you have enough items in your list, use [ScalingLazyColumn] which is an optimized
-         * version of LazyColumn for wear devices with some added features. For more information,
-         * see d.android.com/wear/compose.
-         */
-        Column(
-            modifier = Modifier
-                .fillMaxSize() // fill the entire screen
-                .background(MaterialTheme.colors.background), // background color
-            verticalArrangement = Arrangement.Center // centers the content vertically
-        ) {
-            Greeting(greetingName = greetingName) // pass the greeting name to the Greeting composable
-        }
-    }
-}
-
-@Composable
-fun Greeting(greetingName: String) { // receives the greeting name from the WearApp composable
-    Text(
-        modifier = Modifier.fillMaxWidth(), // fill the entire width
-        textAlign = TextAlign.Center, // centers the text
-        color = MaterialTheme.colors.primary, // uses the primary color from the theme
-        text = stringResource(R.string.hello_world, greetingName) // gets the string from the resources
-    )
-}
-
-@Preview(device = Devices.WEAR_OS_SMALL_ROUND, showSystemUi = true) // preview for a small round watch
-@Composable
-fun DefaultPreview() {
-    WearApp("Preview Android") // pass the greeting name to the WearApp composable
 }

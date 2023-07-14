@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'mx.edu.utxj.ddi.practica6_200527'
+    namespace 'mx.edu.utxj.ti.idgs.ddi.tarea7_200527'
     compileSdk 33
 
     defaultConfig {
-        applicationId "mx.edu.utxj.ddi.practica6_200527"
+        applicationId "mx.edu.utxj.ti.idgs.ddi.tarea7_200527"
         minSdk 30
         targetSdk 33
         versionCode 1
